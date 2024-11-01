@@ -13,18 +13,18 @@ import (
 )
 
 var datePickerMonths = []string{
-	"January",
-	"February",
-	"March",
-	"April",
-	"May",
-	"June",
-	"July",
-	"August",
-	"September",
-	"October",
-	"November",
-	"December",
+	"Janeiro",
+	"Fevereiro",
+	"Março",
+	"Abril",
+	"Maio",
+	"Junho",
+	"Julho",
+	"Agosto",
+	"Setembro",
+	"Outubro",
+	"Novembro",
+	"Dezembro",
 }
 
 func daysInMonth(t time.Time, o int) int {
@@ -105,13 +105,13 @@ func adjustWeekday(d time.Weekday, weekStart time.Weekday) int {
 
 // offsets correspond to time.Weekday, hence starting on Monday
 var weekdayLabels = []*widget.Label{
-	widget.NewLabelWithStyle("Sun", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
-	widget.NewLabelWithStyle("Mon", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
-	widget.NewLabelWithStyle("Tue", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
-	widget.NewLabelWithStyle("Wed", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
-	widget.NewLabelWithStyle("Thu", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
-	widget.NewLabelWithStyle("Fri", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
-	widget.NewLabelWithStyle("Sat", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
+	widget.NewLabelWithStyle("Dom", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
+	widget.NewLabelWithStyle("Seg", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
+	widget.NewLabelWithStyle("Ter", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
+	widget.NewLabelWithStyle("Qua", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
+	widget.NewLabelWithStyle("Qui", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
+	widget.NewLabelWithStyle("Sex", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
+	widget.NewLabelWithStyle("Sab", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
 }
 
 func updateGrid(grid *fyne.Container, when time.Time, weekStart time.Weekday, updateWhen func(time.Time), updateSelects func(time.Time)) {
